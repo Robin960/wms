@@ -7,6 +7,10 @@
    'pip install -r requirements.txt' 
 4. Just execute the 'run.py' on your command line console.
 
+#DB Information
+1.  For ALL Tables there are two records: ID = 1 and 2.
+2.  So, please use these ID values for the below endpoints.
+
 #Endpoints
 1.  run on localhot: 127.0.0.1:5100/
 
