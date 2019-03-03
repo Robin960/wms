@@ -22,7 +22,7 @@ def handle_invalid_usage(error):
 @app.route("/warehouse", methods = ['GET'])
 def home():    
     try:
-        return jsonify("Welcome To Byrd Warhouse Management System,")
+        return jsonify("Welcome To Byrd Warehouse Management System,")
     except:
         raise InvalidUsage('This view is gone', status_code=400)
 
