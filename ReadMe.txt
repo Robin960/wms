@@ -40,6 +40,8 @@
 
 3. SQLAlchemy: It can be used with or without the ORM(Object Relational Mapping).
                It provides the way to write create, read and other databse operations without writing SQL queries on database.
+
+4. SQLite Database: It's light weight relational database and good for implementing prototypes and small projects.
              
 
 
