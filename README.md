@@ -2,20 +2,28 @@
 1. This application requires the installation of Python and some dependencies on your machine. 
 2. Please make sure the all the files placed on the same directory.
 3. All the requirements are installed based on 'requirements.txt' file.
-   If dependencies are not installed on your machine, use below command on your console 
-   -pip install -r requirements.txt 
-4. Just run the 'run.py' on your command line console.
+   If dependencies are not installed on your machine, use this command on your console 
+   
+   'pip install -r requirements.txt' 
+4. Just execute the 'run.py' on your command line console.
 
 #Endpoints
-1.  run on localhots: 127.0.0.1:5100/
+1.  run on localhot: 127.0.0.1:5100/
+
 2.  127.0.0.1:5100/warehouse --> Home Page
+
     127.0.0.1:5100/warehouse/orders?customer_name = ''  --> Order Information
+
     127.0.0.1:5100/warehouse/add/orders/'id'/'customer_name' --> Add order but pass the id and customer_name mentioned on quotes.
     
     127.0.0.1:5100/warehouse/delete/orders/'id'
+
     127.0.0.1:5100/warehouse/update/orders/'id'/'update value'   --> 'update value' = customer_name = 'abc'
+
     127.0.0.1:5100/warehouse/sku/'id'
+    
     127.0.0.1:5100/warehouse/storage/'id'
+    
     127.0.0.1:5100/warehouse/orderline/'id'
 
 #Technologiey Stack
