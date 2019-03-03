@@ -22,7 +22,7 @@ def handle_invalid_usage(error):
 @app.route("/warehouse", methods = ['GET'])
 def home():    
     try:
-        return jsonify("Welcome To Byrd Warehouse Management System,")
+        return jsonify("Welcome To Byrd Warehouse Management System.")
     except:
         raise InvalidUsage('This view is gone', status_code=400)
 
@@ -53,6 +53,7 @@ def addOrder(orderid,name):
         return jsonify('Order Added Successfully')
     except:
         return jsonify('Not able to add this order at the moment, please try with different parameters.')
+
 #Update the customer_name in Orders Model with orderID
 @app.route(u"/warehouse/update/orders/<orderid>/<name>", methods = ['GET'])
 def updateOrder(orderid,name):
@@ -61,6 +62,7 @@ def updateOrder(orderid,name):
         return jsonify('Order Updated Successfully')
     except:
         return jsonify('Order not updated, somethiing went wrong.')
+
 #Get the Sku Model values with passing the SkuID
 @app.route("/warehouse/sku/<skuid>", methods = ['GET'])
 def skuID(skuid):
@@ -69,6 +71,7 @@ def skuID(skuid):
         return jsonify({'id':products.id, 'Product_Name':products.product_name})
     except:
         return jsonify('No Information available for Sku:'+ skuid)
+
 #Get the storage detail based on storage id
 @app.route("/warehouse/storage/<st_id>", methods = ['GET'])
 def storage(st_id):
